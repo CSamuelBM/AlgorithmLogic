@@ -1,1 +1,1 @@
-# Algoritmos de Programación.
+# Algoritmos Logicos de Programación.
