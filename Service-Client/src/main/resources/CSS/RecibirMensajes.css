@@ -1,0 +1,19 @@
+/* Barra de scrol de los mensajes */
+.sp-mensaje {
+   -fx-background-color: white;
+   -fx-control-inner-background: white;
+}
+
+/* Fondo del mensaje */
+.vb-fondo-mensaje{
+   -fx-padding: 20px;
+   -fx-spacing: 10px
+   -fx-alignment: center;
+   -fx-pref-height: 60px;
+}
+
+/* Donde se recibe el mensaje */
+.ta-mensaje{
+   -fx-text-fill: black;
+   -fx-font-size: 14px;
+}

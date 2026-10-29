@@ -1,0 +1,24 @@
+/* Fondo del perfil propietario */
+.hb-fondo-perfil-propietario {
+    -fx-background-color: #F4DEFF;
+    -fx-pref-height: 60px;
+    -fx-alignment: center-left;
+    -fx-spacing: 10px;
+}
+
+/* Entrar al perfil propietario */
+.tb_perfil-propietario {
+   -fx-font-weight: bold;
+   -fx-background-color: transparent;
+   -fx-border-color: #00a884;
+   -fx-border-radius: 50px;
+}
+.tb_perfil-propietario: hover{
+    -fx-background-radius: 50px;
+    -fx-background-color: #84E0AF;
+    -fx-border-color: #4CAF50;
+}
+.tb_perfil-propietario: pressed{
+    -fx-background-color: #84E0C9;
+    -fx-background-radius: 50px;
+}

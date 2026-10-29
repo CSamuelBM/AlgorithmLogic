@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+
+<HBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="Controller.ServidorC">
+
+    <!-- Conexion a los estilos css -->
+    <stylesheets>
+        <URL value="@../CSS/Opciones.css"/>
+        <URL value="@../CSS/PerfilHost.css"/>
+        <URL value="@../CSS/Buscar.css"/>
+        <URL value="@../CSS/PerfilNoHost.css"/>
+        <URL value="@../CSS/RecibirMensajes.css"/>
+        <URL value="@../CSS/EnviarMensajes.css"/>
+    </stylesheets>
+
+    <!-- Barrra de la izquierda -->
+    <HBox styleClass="hb-barra_opciones_usuarios">
+        <!-- Opciones princiaples -->
+        <VBox styleClass="vb-barra_opciones">
+            <ToggleButton text="icono" styleClass="tb_tipo_1"/>
+            <ToggleButton text="icono" styleClass="tb_tipo_2"/>
+            <ToggleButton text="icono" styleClass="tb_tipo_3"/>
+        </VBox>
+
+        <!-- Perfil y chats -->
+        <VBox HBox.hgrow="ALWAYS">
+            <!-- Conexion al perfil -->
+            <HBox styleClass="hb-fondo-perfil-propietario">
+                <Region prefWidth="10.0"/>
+                <ToggleButton text="MI PERFIL" styleClass="tb_perfil-propietario"/>
+            </HBox>
+
+            <!-- Buuscar usuario -->
+            <HBox styleClass="hb-fondo-buscar">
+                <TextField promptText="Buscar chat..." styleClass="tf_buscar" HBox.hgrow="ALWAYS"/>
+            </HBox>
+
+            <!-- Lista de los contactos -->
+            <ListView fx:id="listaContactos" VBox.vgrow="ALWAYS" />
+        </VBox>
+
+    </HBox>
+
+    <!-- Contendio principal -->
+    <BorderPane HBox.hgrow="ALWAYS">
+        <!-- Barra superior del usuario con quien platica -->
+        <top>
+            <!-- Diseño de la barra superior -->
+            <HBox styleClass="hb-fondo-perfil-invitado">
+                <Region prefWidth="15.0"/>
+                <!-- Icono de la cuenta con que chatea -->
+                <Label text="icono" styleClass="lb-icono-perfil-invitado"/>
+                <!-- Envuelve el contendio del nombre y disponiblilidad -->
+                <VBox alignment="CENTER_LEFT">
+                    <Region prefHeight="10.0"/>
+                    <!-- Nombre de la cuenta con que chatea -->
+                    <Label text="Nombre del usuario " styleClass="lb-nombre-perfil-invitado"/>
+                    <!-- Disponibilidad de la cuenta con que chatea -->
+                    <Label text="disponible" styleClass="lb-disponible-perfil-invitado"/>
+                </VBox>
+
+                <Region HBox.hgrow="ALWAYS" />
+
+                <!-- Barra oculta de opciones con el perfil invitado -->
+                <MenuButton styleClass="mb-opciones-perfil-invitado">
+                    <items>
+                        <MenuItem text="Bloquear" styleClass="mi-opciones"/>
+                        <MenuItem text="Borrar chat" styleClass="mi-opciones"/>
+                        <MenuItem text="Desbloquear" styleClass="mi-opciones"/>
+                    </items>
+                </MenuButton>
+                <Region prefWidth="15.0"/>
+            </HBox>
+        </top>
+
+        <!-- Pantalla donde se reciben los mensajes -->
+        <center>
+               <!-- Scroll que envuelve un mensaje -->
+               <ScrollPane styleClass="sp-mensaje">
+                   <!-- Fondo del mensaje -->
+                   <VBox styleClass="vb-fondo-mensaje">
+                       <!-- Donde se recibe el mensaje  -->
+                       <TextArea fx:id="taMostrarMensajes" promptText="......" VBox.vgrow="ALWAYS" styleClass="ta-mensaje"/>
+                   </VBox>
+               </ScrollPane>
+        </center>
+
+        <!-- Barra donde se envian los mensajes -->
+        <bottom>
+            <!-- Fondo de enviar mensaje -->
+            <HBox styleClass="hb-fondo-enviar">
+                <!-- Opciones de tipo de mensajes -->
+                <ToggleButton text="icono" styleClass="tb-opciones"/>
+
+                <!-- Escribie el mensaje -->
+                <TextField fx:id="tfMensaje" promptText="Escribir un mensaje" HBox.hgrow="ALWAYS" styleClass="tf-mensaje"/>
+
+                <!-- Icono de enviar mensaje -->
+                <ToggleButton text="icono" onAction="#enviarMensaje" styleClass="tb-enviar-mensaje"/>
+            </HBox>
+        </bottom>
+    </BorderPane>
+
+</HBox>

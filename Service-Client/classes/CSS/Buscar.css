@@ -1,0 +1,12 @@
+/* Fondo de buscar */
+.hb-fondo-buscar{
+    -fx-background-color: #E9C4FF;;
+    -fx-padding: 10px;
+    -fx-pref-height: 50px;
+    -fx-alignment: center;
+}
+
+/* Ingresa texto para la busqueda */
+.tf_buscar{
+    -fx-background-radius: 15px;
+}

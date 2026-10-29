@@ -1,0 +1,54 @@
+.hb-barra_opciones_usuarios {
+   -fx-border-color: #cccccc;
+   -fx-border-width: 0 1 0 0;
+   -fx-pref-width: 250px;
+   -fx-min-width: 250px;
+   -fx-max-width: 250px;
+}
+
+/* En vuelve todo el contendio de opciones */
+.vb-barra_opciones {
+   -fx-pref-width: 100px;
+   -fx-spacing: 20px;
+   -fx-alignment: top-center;
+   -fx-background-color: #fcf4f9;
+   -fx-padding: 15 0 0 0;
+}
+
+/* Tipos de botones para las opciones */
+.tb_tipo_1 {
+    -fx-background-radius: 50px;
+    -fx-background-color: #00a884;
+    -fx-text-fill: white;
+}
+.tb_tipo_1: hover{
+    -fx-background-color: #84E0C9;
+}
+.tb_tipo_1: pressed{
+    -fx-background-color: #A9E084;
+}
+
+.tb_tipo_2 {
+    -fx-background-radius: 50px;
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+}
+.tb_tipo_2: hover{
+    -fx-background-color: #84E0C9;
+}
+.tb_tipo_2: pressed{
+    -fx-background-color: #A9E084;
+}
+
+.tb_tipo_3 {
+    -fx-background-radius: 50px;
+    -fx-background-color: transparent;
+    -fx-border-color: #00a884;
+    -fx-border-radius: 50px;
+}
+.tb_tipo_3: hover{
+    -fx-background-color: #84E0C9;
+}
+.tb_tipo_3: pressed{
+    -fx-background-color: #A9E084;
+}

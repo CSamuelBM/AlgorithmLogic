@@ -1,0 +1,39 @@
+/* Fondo del perfil invitado */
+.hb-fondo-perfil-invitado{
+   -fx-background-color: #f7eefa;
+   -fx-border-color: #cccccc;
+   -fx-border-width: 0 0 1 0;
+   -fx-pref-height: 60px;
+   -fx-alignment: center-left;
+   -fx-spacing: 15px;
+}
+
+/* Icono del perfil invitado */
+.lb-icono-perfil-invitado{
+   -fx-font-size: 24px;
+}
+
+/* Nombre del perfil invitado */
+.lb-nombre-perfil-invitado{
+   -fx-font-weight: bold;
+   -fx-text-fill: #5b3e8c;
+}
+
+/* Disponible el perfil invitado */
+.lb-disponible-perfil-invitado{
+   -fx-text-fill: gray;
+   -fx-font-size: 11px;
+}
+
+/* Opciones ocultas para el perfil invitado */
+.mb-opciones-perfil-invitado{
+     -fx-background-color: transparent;
+     -fx-font-size: 18px;
+     -fx-font-weight: bold;
+}
+
+/* Tipo de funete de las opciones ocultas */
+.mi-opciones{
+    -fx-text-fill: gray;
+    -fx-font-size: 15px;
+}
