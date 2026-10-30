@@ -1,0 +1,23 @@
+button {
+  background: linear-gradient(120deg, #04AA6D, #86bfa9);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 16px 18px;
+  border-radius: 4px;
+}
+
+button:hover {
+  background: linear-gradient(120deg, #04AA6D, #71ffcc);
+  color: #fff;
+}
+
+a {
+  text-decoration-line: none;
+  color: white;
+  font-size: 1.2rem;
+}
+
+a img {
+  max-width: 3vw;
+}

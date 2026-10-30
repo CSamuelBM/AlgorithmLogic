@@ -1,0 +1,218 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Mi primer blog">
+  <title> Mi Page VL </title>
+  <link rel="icon" href="/assets/icon/AppMainLogo.ico" sizes="280x280">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/index.css" type="text/css" media="all">
+</head>
+
+ <body class="body">
+
+     <!--Header-->
+     <nav class="navbar navbar-expand-lg nav">
+       <img class="nav__logo" src="/assets/svg/AppMainLogo.svg" alt="Icono de la app.">
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+       <svg width="40px" height="40px" viewBox="0 0 24 24">
+         <path d="M 3 6 h 18 M 3 12 h 18 M 3 18 h 18"
+               stroke="#2781b5"
+               stroke-width="2"
+               stroke-linecap="round"/>
+       </svg>
+     </button>
+       <div class="collapse navbar-collapse" id="navbarNav">
+         <ul class="ms-auto list">
+           <li class="list__item">
+             <a class="list__link" href="index.html">Home</a>
+           </li>
+           <li class="list__item">
+             <a class="list__link" href="./pages/blog.html">Blog</a>
+           </li>
+           <li class="list__item">
+             <a class="list__link" href="/about">About</a>
+           </li>
+         </ul>
+       </div>
+     </nav>
+
+     <!--Main-->
+     <div class="container-fluid m-auto p-5">
+       <div class="row">
+         <div class="main">
+           <div class="main__card1">
+             <div class="main__card1__box1">
+               <div class="main__card__content p-3 text-bg-primary border border-danger rounded-2">
+                 <h2>Example element with utilities</h2>
+                 <p>Example element with utilities, example element with utilities</p>
+               </div>
+             </div>
+             <div class="main__card1__box2">
+               <div class="main__card__content p-3">
+                 <svg width="100%" height="100%" viewBox="0 0 100 100">
+                   <defs>
+                     <pattern id="repat" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                       <rect class="svg__fill__green--1" x="0" y="0" width="10" height="10"/>
+                       <rect class="svg__fill__green--2" x="10" y="10" width="10" height="10"/>
+                     </pattern>
+                   </defs>
+                   <rect x="0" y="0" width="100%" height="100%" fill="url(#repat)"/>
+                 </svg>
+               </div>
+             </div>
+             <div class="main__card1__box3">
+               <div class="main__card__content p-3 text-bg-primary bg-info border border-warning-subtle rounded-2">
+                 <p>Example element with utilities</p>
+               </div>
+             </div>
+           </div>
+         </div>
+         <div class="main">
+           <div class="main__card2">
+             <div class="main__card2__box1">
+               <div class="main__card__content main__card__content--center p-2">
+                 <svg width="100%" height="100%" viewBox="0 0 200 200">
+                   <circle class="svg__fill__red" cx="110" cy="140" r="60"/>
+                   <rect class="svg__fill__orange" x="80" y="65" width="60" height="25"/>
+                   <circle class="svg__stroke__orange" cx="110" cy="50" r="15" fill="none" stroke-width="2"/>
+                 </svg>
+                 <p>Esfera</p>
+               </div>
+             </div>
+             <div class="main__card2__box2">
+               <div class="main__card__content main__card__content--center p-2">
+                 <svg width="100%" height="100%" viewBox="0 0 200 200">
+                   <polygon class="svg__fill__green" points="95,110 10,170 180,170"/>
+                   <polygon class="svg__fill__green--1" points="95,70 10,140 180,140"/>
+                   <polygon class="svg__fill__green--2" points="95,35 20,100 170,100"/>
+                   <rect x="80" y="170" width="35" height="50" fill="#484A00"/>
+                 </svg>
+                 <p>Pinito</p>
+               </div>
+             </div>
+             <div class="main__card2__box3">
+               <div class="main__card__content main__card__content--center p-2">
+                 <svg width="100%" height="100%" viewBox="0 0 200 200">
+                   <circle class="svg__fill__cafe" cx="95" cy="55" r="40"/>
+                   <line class="svg__stroke__cafe" x1="30" y1="110" x2="160" y2="110"/>
+                   <line class="svg__stroke__cafe" x1="85" y1="125" x2="55" y2="175"/>
+                   <line class="svg__stroke__cafe" x1="105" y1="135" x2="135" y2="175"/>
+                   <rect class="svg__stroke__white" x="80" y="65" width="30" height="8" rx="2"/>
+                   <circle class="svg__fill__white" cx="80" cy="40" r="6"/>
+                   <circle class="svg__fill__white" cx="110" cy="40" r="6"/>
+                   <circle class="svg__fill__black" cx="95" cy="100" r="6"/>
+                   <circle class="svg__fill__black" cx="95" cy="120" r="6"/>
+                   <circle class="svg__fill__black" cx="95" cy="140" r="6"/>
+                 </svg>
+                 <p>Galleta</p>
+               </div>
+             </div>
+           </div>
+         </div>
+         <div class="main">
+           <div class="main__card3">
+             <div class="main__card3__box1">
+               <div class="main__card__content main__card__content--center p-2">
+                 <canvas id="canvas"></canvas>
+               </div>
+             </div>
+           </div>
+         </div>
+         <div class="main">
+           <p class="main__title">Conóceme</p>
+         </div>
+         <div class="main">
+           <p class="main__title">Conóceme</p>
+         </div>
+       </div>
+     </div>
+
+     <!--Footer-->
+     <div class="footer">
+       <div class="container-fluid">
+         <div class="row">
+           <div class="col-md-6 col-lg-3">
+             <div class="footer__section">
+               <div class="footer__section--column">
+                 <img class="footer__logo" src="/assets/svg/AppMainLogo.svg" alt="Icono de la app.">
+                 <ul class="list">
+                   <li class="list__item">
+                     <a class="list__link" href="index.html">Home</a>
+                   </li>
+                   <li class="list__item">
+                     <a class="list__link" href="./pages/blog.html">Blog</a>
+                   </li>
+                   <li class="list__item">
+                     <a class="list__link" href="/about">About</a>
+                   </li>
+                 </ul>
+               </div>
+             </div>
+           </div>
+
+           <div class="col-md-6 col-lg-3">
+               <div class="footer__section">
+                 <div class="footer__section--column">
+                   <div class="footer__section footer__section--row">
+                     <img class="footer__icon" src="/assets/img/telefono.png" alt="Icono de telefono.">
+                     <p class="footer__text">831-263-6282</p>
+                   </div>
+                   <div class="footer__section footer__section--row">
+                     <img class="footer__icon" src="/assets/img/ubicacion.png" alt="Icono de ubicacion.">
+                     <p class="footer__text">83 Park CP 8392</p>
+                   </div>
+                   <div class="footer__section footer__section--row">
+                     <img class="footer__icon" src="/assets/img/correo.png" alt="Icono de correo.">
+                     <p class="footer__text">admin@gmail.com</p>
+                   </div>
+                 </div>
+               </div>
+           </div>
+
+           <div class="col-md-6 col-lg-3">
+             <div class="footer__section">
+               <div class="footer__section footer__section--column--reverse">
+                 <h3 class="footer__title footer__section--align">Redes Sociales</h3>
+                 <div class="footer__section--row">
+                   <a class="list__link" href="https://www.facebook.com">
+                     <img class="footer__icon" src="/assets/img/facebook.png" alt="Icono de facebook.">
+                   </a>
+                   <a class="list__link" href="https://www.youtube.com">
+                     <img class="footer__icon" src="/assets/img/youtube.png" alt="Icono de youtube.">
+                   </a>
+                   <a class="list__link" href="https://www.whatsapp.com">
+                     <img class="footer__icon" src="/assets/img/whatsapp.png" alt="Icono de whatsapp.">
+                   </a>
+                   <a class="list__link" href="https://www.instagram.com">
+                     <img class="footer__icon" src="/assets/img/instagram.png" alt="Icono de intagram.">
+                   </a>
+                 </div>
+               </div>
+             </div>
+           </div>
+
+           <div class="col-md-6 col-lg-3">
+             <div class="footer__section">
+               <div class="footer__section footer__section--column">
+                <form class="form">
+                  <label class="from__label">Name</label>
+                  <input class="form__input" type="text" name="coment" placeholder="Comentario">
+                  <label class="from__label">Email</label>
+                  <input class="form__input" type="email" name="email" placeholder="Email">
+                </form>
+                 <button class="button button--mini">Enviar</button>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+     <script src="js/app.js"></script>
+ </body>
+
+</html>
