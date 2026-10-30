@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+
+<StackPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="Controlador.MainEdicionControlador"
+           stylesheets="@/css/Main-Edicion-CSS.css"
+           styleClass="fondo-principal">
+
+    <fx:include fx:id="campoEditar" source="Campo-Editar-Vista.fxml"/>
+
+    <VBox alignment="TOP_CENTER" pickOnBounds="false">
+        <fx:include fx:id="menu" source="Menu-Vista.fxml"/>
+    </VBox>
+
+</StackPane>
