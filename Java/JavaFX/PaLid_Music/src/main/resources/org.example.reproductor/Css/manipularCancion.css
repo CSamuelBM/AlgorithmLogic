@@ -1,0 +1,38 @@
+.tb-manipular-cancion{
+     -fx-background-color: transparent;
+}
+
+.tb-manipular-cancion:hover{
+     -fx-effect:dropshadow( three-pass-box  ,#FFFFFF ,60 , 0.4 , 0.0 , 0.0 );
+}
+
+.tb-manipular-cancion:pressed{
+     -fx-background-color:  rgba(255, 255, 255, .1);
+}
+
+.silder-barra-sonido .track{
+   -fx-background-color: #3d3d3d;
+   -fx-pref-height: 6px;
+}
+
+.silder-barra-sonido:hover{
+   -fx-effect:dropshadow( three-pass-box  ,#B5B5B5 ,60 , 0.4 , 0.0 , 0.0 );
+}
+
+.silder-barra-sonido .thumb {
+    -fx-background-color: #000000;
+    -fx-pref-width: 14px;
+    -fx-pref-height: 14px;
+}
+
+.silder-barra-sonido .thumb:hover {
+    -fx-effect:dropshadow( three-pass-box  ,#0058FF ,20 , 0.0 , 0.0 , 0.0 );
+}
+
+.label-tiempo{
+   -fx-text-fill: #FFFFFF;
+}
+
+.label-tiempo:hover{
+   -fx-effect:dropshadow( three-pass-box  ,#FFFFFF ,60 , 0.4 , 0.0 , 0.0 );
+}

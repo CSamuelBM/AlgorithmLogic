@@ -1,0 +1,69 @@
+.fondo-cancion-v{
+    -fx-background-color: #333333;
+    -fx-padding: 10 5;
+    -fx-spacing: 10;
+    -fx-border-color: #969696;
+    -fx-border-radius: 6px;
+    -fx-margin-top: 4px;
+    -fx-pref-weight: 10.0;
+}
+
+.fondo-cancion-h{
+    -fx-background-color: #333333;
+    -fx-spacing: 12;
+    -fx-pref-Height: 80.0;
+    -fx-alignment: CENTER;
+    -fx-border-color: #969696;
+    -fx-border-radius: 6px;
+    -fx-margin-top: 16px;
+}
+.fondo-cancion-h:hover{
+    -fx-background-color: linear-gradient(to top, rgba(77,77,77,0.7) 0%, rgba(122,122,122,0.8) 100%);
+}
+
+.fondo-scroll-pane{
+    -fx-background-color: transparent;
+}
+.fondo.scroll-pane > .viewport{
+    -fx-background-color: transparent;
+}
+.fondo-scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+.boton-play{
+   -fx-background-color: transparent;
+}
+.boton-play:hover{
+    -fx-effect:dropshadow( three-pass-box ,#00FF19 ,60 , 0.4 , 0.0 , 0.0 );
+}
+.boton-play:pressed{
+    -fx-background-color: rgba(0, 255, 25, .1);
+}
+
+.boton-favorito{
+    -fx-background-color: transparent;
+}
+.boton-favorito: hover{
+   -fx-effect:dropshadow( three-pass-box ,#EE00FF ,60 , 0.8 , 0.0 , 0.0 );
+}
+.boton-favorito: pressed{
+   -fx-background-color: rgba(255, 0, 221, .1);
+}
+
+.label-cancion{
+   -fx-font-weight: bold;
+   -fx-font-family: "Segoe UI", Roboto, Arial, sans-serif;
+   -fx-text-fill: #FFFFFF;
+   -fx-font-size: 14px;
+}
+
+.boton-eliminar{
+    -fx-background-color: transparent;
+}
+.boton-eliminar: hover{
+   -fx-effect:dropshadow( three-pass-box ,#9E1C00 ,60 , 0.8 , 0.0 , 0.0 );
+}
+.boton-eliminar: pressed{
+   -fx-background-color: rgba(255, 0, 221, .1);
+}

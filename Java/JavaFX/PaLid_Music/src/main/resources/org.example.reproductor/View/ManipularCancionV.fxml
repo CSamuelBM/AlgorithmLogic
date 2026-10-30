@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.example.reproductor.Controller.ManipularCancionC"
+            alignment="CENTER_RIGHT"
+            prefHeight="70.0" prefWidth="600.0" styleClass="fondo-secundario">
+
+    <ToggleButton fx:id="tbAleatorio" onAction="#accionAleatorio" styleClass="tb-manipular-cancion"/>
+    <ToggleButton fx:id="tbAnterior" onAction="#accionAnterior" styleClass="tb-manipular-cancion"/>
+    <ToggleButton fx:id="tbReinicio" onAction="#accionReinicio" styleClass="tb-manipular-cancion"/>
+    <ToggleButton fx:id="tbSiguiente" onAction="#accionSiguiente" styleClass="tb-manipular-cancion"/>
+    <Slider fx:id="sTiempo" styleClass="silder-barra-sonido"/>
+    <Label fx:id="lbTiempo" styleClass="label-tiempo"/>
+    <ToggleButton fx:id="tbAdelantar" onAction="#accionAdelantar" styleClass="tb-manipular-cancion"/>
+    <ToggleButton fx:id="tbAtrasar" onAction="#accionAtrasar" styleClass="tb-manipular-cancion"/>
+    <Slider fx:id="sVolumen" min="0" max="100" value="50" styleClass="silder-barra-sonido"/>
+    <ToggleButton fx:id="tbSilenciar" onAction="#accionSilenciar" styleClass="tb-manipular-cancion"/>
+
+</HBox>

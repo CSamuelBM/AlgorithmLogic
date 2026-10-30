@@ -1,0 +1,37 @@
+.izquierda{
+     -fx-background-color: linear-gradient(to right, rgba(8, 0, 255, 1) 0%, rgba(51, 51, 51, 1) 10%);
+     -fx-text-fill: #FFFFFF;
+     -fx-padding: 10 4;
+     -fx-background-radius: 8px;
+     -fx-font-size: 13px;
+     -fx-font-weight: bold;
+     -fx-font-family: "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+.izquierda:hover{
+    -fx-background-color: linear-gradient(to bottom, rgba(77,77,77,0.7) 0%, rgba(122,122,122,0.8) 100%);
+}
+
+.izquierda:pressed{
+     -fx-background-color: linear-gradient(to top, rgba(150,150,150,1) 0%, rgba(54,54,54,1) 100%);
+}
+
+.izquierda:focused{
+     -fx-effect: dropshadow( three-pass-box  ,#1F1414 ,10 , 0.4 , 0.0 , 0.0 );
+}
+
+.tb-independiente{
+   -fx-background-color: #333333;
+   -fx-font-weight: bold;
+   -fx-font-family: "Segoe UI", Roboto, Arial, sans-serif;
+   -fx-text-fill: #FFFFFF;
+   -fx-font-size: 14px;
+   -fx-background-radius: 10px;
+   -fx-padding: 10 40 10 40;
+   -fx-spacing: 12;
+   -fx-margin-top: 16px;
+}
+
+.tb-independiente:hover{
+   -fx-effect:dropshadow( three-pass-box  ,#FFFFFF ,20 , 0.4 , 0.0 , 0.0 );
+}

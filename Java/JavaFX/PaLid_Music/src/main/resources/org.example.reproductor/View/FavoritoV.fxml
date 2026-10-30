@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.control.ScrollPane?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.example.reproductor.Controller.FavoritoC"
+            prefHeight="400.0" prefWidth="600.0" styleClass="fondo-principal">
+
+    <center>
+        <ScrollPane fitToWidth="true" pannable="true"
+                    hbarPolicy="NEVER" vbarPolicy="ALWAYS"
+                    styleClass="fondo-scroll-pane">
+            <VBox fx:id="vBox" AnchorPane.topAnchor="0" AnchorPane.leftAnchor="0"
+                  AnchorPane.rightAnchor="0" AnchorPane.bottomAnchor="0"
+                  styleClass="fondo-cancion-v"/>
+        </ScrollPane>
+    </center>
+
+</BorderPane>
