@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.control.ScrollPane?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="Controlador.CampoEditarControlador"
+            stylesheets="@/css/Campo-Editar-CSS.css">
+
+        <center>
+            <ScrollPane fitToWidth="true" styleClass="fondo-campo-editor">
+                <VBox fx:id="espacioEditor" alignment="TOP_CENTER" spacing="20"
+                      styleClass="campo-editor"/>
+            </ScrollPane>
+        </center>
+
+</BorderPane>

@@ -1,0 +1,72 @@
+.barra-fondo{
+    -fx-background-color: #BBD3FF;
+    -fx-padding: 20 15;
+    -fx-background-radius: 10;
+    -fx-background-insets: 0;
+    -fx-effect: dropshadow(one-pass-box, #91BAFF, 6, 0.2, 1, 1);
+}
+
+.barra-secundaria {
+    -fx-background-color: #829DCF;
+    -fx-padding: 20 15;
+    -fx-background-radius: 10;
+    -fx-background-insets: 0;
+    -fx-effect: dropshadow(one-pass-box, #91BAFF, 6, 0.2, 1, 1);
+}
+
+.opcion-principal{
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+}
+
+.opcion-principal:hover{
+    -fx-border-color: #BBD3FF;
+}
+
+.opcion-principal:pressed{
+    -fx-background-color: #A6C7FF;
+}
+
+.dhu-text{
+     -fx-font-family: "Arial";
+     -fx-font-weight: bold;
+     -fx-font-size: 30px;
+     -fx-text-fill: rgba(59, 77, 132, 0.8);
+}
+
+.menu-principal{
+     -fx-background-color: #BBD3FF;
+     -fx-text-fill: #000000;
+     -fx-background-radius: 25;
+     -fx-font-size: 16px;
+     -fx-border-radius: 25;
+     -fx-cursor: hand;
+     -fx-font-weight: italic;
+}
+
+.menu-principal:hover{
+     -fx-border-color: #829DCF;
+}
+
+.menu-principal:pressed{
+     -fx-background-color: rgba(176, 204, 255, 0.8);
+}
+
+.menu-secundario{
+      -fx-background-color: transparent;
+      -fx-text-fill: #000000;
+      -fx-background-radius: 15;
+      -fx-font-size: 12px;
+      -fx-cursor: hand;
+      -fx-font-weight: bold;
+}
+
+.menu-secundario:hover{
+     -fx-background-color: #BBD3FF;
+}
+
+.menu-secundario:pressed{
+      -fx-background-color: rgba(176, 204, 255, 0.8);
+}

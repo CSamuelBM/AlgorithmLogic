@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="Controlador.MenuControlador"
+            stylesheets="@/css/Menu-CSS.css">
+    <top>
+        <VBox spacing="2" alignment="TOP_CENTER">
+            <HBox styleClass="barra-fondo">
+                <Button styleClass="opcion-principal">
+                    <graphic>
+                        <ImageView fitHeight="40" fitWidth="40" preserveRatio="true">
+                            <image> <Image url="@/img/madre.png"/> </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+
+                <Label text="Dhu-Text" styleClass="dhu-text"/>
+                <Region HBox.hgrow="ALWAYS"/>
+
+                <Button text="Archivo" fx:id="btArchivo" styleClass="menu-principal"/>
+                <Button text="Inicio" fx:id="btInicio" styleClass="menu-principal"/>
+                <Button text="Editar" fx:id="btEditar" styleClass="menu-principal"/>
+                <Button text="Presentacion" fx:id="btPresentacion" styleClass="menu-principal"/>
+                <Button text="Referencias" fx:id="btReferencias" styleClass="menu-principal"/>
+                <Button text="Vista" fx:id="btVista" styleClass="menu-principal"/>
+                <Button text="Ayuda" fx:id="btAyuda" styleClass="menu-principal"/>
+
+                <Region HBox.hgrow="ALWAYS"/>
+            </HBox>
+
+            <HBox fx:id="barraSecundaria" visible="false" managed="false"
+                  alignment="CENTER_LEFT" styleClass="barra-secundaria" spacing="10"/>
+        </VBox>
+    </top>
+</BorderPane>

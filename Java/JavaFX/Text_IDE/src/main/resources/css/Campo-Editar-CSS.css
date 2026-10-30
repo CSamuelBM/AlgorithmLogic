@@ -1,0 +1,18 @@
+.fondo-campo-editor{
+     -fx-background-color: transparent;
+}
+
+.fondo-campo-editor> .viewport {
+     -fx-background-color: transparent;
+}
+
+.campo-editor{
+     -fx-padding: 45;
+     -fx-font-size: 11px;
+     -font-family: "Poppins", "Arial", sans-serif;
+     -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0, 0, 2);
+}
+
+.lienzo-texto {
+    -fx-padding: 25 35 25 35;
+}
