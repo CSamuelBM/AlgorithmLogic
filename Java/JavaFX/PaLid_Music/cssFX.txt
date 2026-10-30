@@ -1,0 +1,89 @@
+Fuente
+----------------------------
+-fx-font-family: ;
+-fx-font-size: ;  
+-fx-font-weight: ; [normal | bold | bolder | lighter | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900]
+-fx-font-style: ; [normal | italic | oblique]
+----------------------------
+
+Texto
+----------------------------
+-fx-text-fill: ;
+-fx-text-alignment: ;
+----------------------------
+
+Color
+----------------------------
+-fx-background-color: ;
+-fx-border-color: ;
+----------------------------
+
+Bordes
+---------------------------
+-fx-background-radius: ;
+-fx-border-radius: ;
+-fx-border-width: ;
+---------------------------
+
+Cursor
+----------------------
+-fx-cursor
+----------------------
+
+Relativo
+---------------------------------------------------------
+px -> pixeles relativos al dispositivo de visualización
+em -> el tamaño de la fuente mas relevante
+----------------------------------------------------------
+
+Absoluto
+---------------------------------------------------------
+en -> pulgadas
+cm -> centímetros
+mm -> milímetros
+pt -> puntos 1/72 de pulgadas
+pc -> picas 1 pica 12 puntos
+----------------------------------------------------------
+
+Porcentaje
+---------------------------------------------------------------------
+% -> porcentaje de cierta longitud del ancho o la altura de un nodo
+---------------------------------------------------------------------
+
+Tiempo
+-----------------------------------
+s -> duración en segundos
+ms -> duración en milisegundos
+indefinido -> duración indefinida
+-----------------------------------
+
+Imagen
+-----------------------
+-fx-background-image: url();
+image-pattern(<url>, [<size>, <size>, <size>, <size>[, <boolean>]?]?)
+-----------------------
+
+Sombras
+------------------------------------------------------------------------------------
+
+Paralela
+---------------------------------------------------------------------------------
+dropshadow( <blur-type> , <color> , <number> , <number> , <number> , <number> );
+<blur-type> -> [ gaussian | one-pass-box | three-pass-box | two-pass-box ]
+<number> -> radio de desenfoque de la sombra
+<number> -> extensión de la sombra
+<number> -> desplazamiento de la sombra en dirección x en pixeles
+<number> -> desplazamiento de la sombra en dirección y en pixeles
+-----------------------------------------------------------------------------------
+
+Interior
+--------------------------------------------------------------------------------------
+innershadow( <tipo-desenfoque> , <color> , <número> , <número> , <número> , <número> )
+---------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------
+
+Comentarios
+---------------
+/* */
+---------------

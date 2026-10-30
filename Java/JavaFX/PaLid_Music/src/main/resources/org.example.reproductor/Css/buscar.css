@@ -1,0 +1,15 @@
+.textField-buscar{
+   -fx-background-color: #333333;
+   -fx-font-weight: bold;
+   -fx-font-family: "Segoe UI", Roboto, Arial, sans-serif;
+   -fx-text-fill: #FFFFFF;
+   -fx-font-size: 14px;
+   -fx-background-radius: 10px;
+   -fx-background-position: 8px center;
+   -fx-background-size: 18px 18px;
+   -fx-padding: 10 10 10 10px;
+}
+
+.textField-buscar:hover{
+   -fx-effect:dropshadow( three-pass-box  ,#FFFFFF ,60 , 0.4 , 0.0 , 0.0 );
+}
