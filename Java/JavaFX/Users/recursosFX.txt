@@ -1,0 +1,15 @@
+Cursos JavaFX
+
+https://youtube.com/playlist?list=PLNjWMbvTJAIjLRW2qyuc4DEgFVW5YFRSR&si=GxVsnY-9Z0vcGEkC
+
+https://youtu.be/8Rv4SHZ-9xM?si=acglD8XgFV-Su2ge
+
+Documentación JavaFX
+
+https://www.pragmaticcoding.ca/beginners/intro
+
+https://docs.oracle.com/javase/8/javafx/get-started-tutorial/jfx-overview.htm
+
+https://docs.oracle.com/javase/8/javafx/api/javafx/scene/doc-files/cssref.html
+
+https://docs.oracle.com/javase/8/javafx/get-started-tutorial/

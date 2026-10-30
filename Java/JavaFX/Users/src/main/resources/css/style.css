@@ -1,0 +1,29 @@
+.label {
+   -fx-text-fill: Black;
+   -fx-font-size: 14px;
+   -fx-font-family: Arial;
+   -fx-font-weight: bold;
+   -fx-alignment: center;
+}
+
+.txt_field {
+    -fx-text-fill: Black;
+    -fx-font-size: 12px;
+    -fx-font-family: Arial;
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+}
+
+.button {
+   -fx-text-fill: Black;
+   -fx-font-size: 12px;
+   -fx-alignment: center;
+   -fx-pref-width: 320px;
+   -fx-pref-height: 20px;
+   -fx-background-radius: 8px;
+   -fx-border-radius: 5px;
+}
+.button: hover{
+    -fx-background-color: Black;
+    -fx-text-fill: White;
+}

@@ -1,0 +1,15 @@
+Texto
+----------------------------
+-fx-font-family: ;
+-fx-font-size: ;
+-fx-font-weight: ;
+-fx-font-style: ;
+-fx-text-fill: ;
+----------------------------
+
+Bordes
+---------------------------
+-fx-background-radius: ;
+-fx-border-radius: ;
+
+---------------------------

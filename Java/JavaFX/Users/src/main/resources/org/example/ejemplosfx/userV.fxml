@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.TextField?>
+<?import com.sun.javafx.scene.control.skin.FXVK?>
+<?import javafx.scene.control.PasswordField?>
+
+<?import javafx.scene.image.ImageView?>
+<HBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="Controller.UserC">
+
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <VBox alignment="CENTER_LEFT" spacing="20.0" prefHeight="360" prefWidth="320">
+        <Label text="INICIO SESION" />
+
+        <VBox spacing="8" fillWidth="true">
+            <Label text="NAME" maxWidth="Infinity"/>
+            <TextField fx:id="tfName" maxWidth="Infinity" styleClass="txt_field"/>
+        </VBox>
+
+        <VBox spacing="8" fillWidth="true">
+            <Label text="PASSWORD" maxWidth="Infinity"/>
+            <PasswordField fx:id="tfPassword" maxWidth="Infinity" styleClass="txt_field"/>
+        </VBox>
+
+        <Button text="Entrar" onAction="#entrar"/>
+    </VBox>
+
+    <VBox alignment="CENTER_RIGHT" prefHeight="360" prefWidth="320">
+        <Label fx:id="img"/>
+    </VBox>
+
+</HBox>

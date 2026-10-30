@@ -1,0 +1,117 @@
+JavaFX
+
+----------------------------------
+Métodos abstractos de Application
+
+launch -> lanza la aplicación
+
+init -> configuraciones iniciales
+start -> inicia la App
+stop -> cerrar procesos 
+-----------------------------------
+
+-----------------------
+Ejecuta la app en main
+
+launch(args)
+------------------------
+
+-------------------------------------------------
+clase Application
+
+STAGE -> plantilla principal (JFrame)
+SCENE -> contenedor de los componentes (JPanel)
+NODE -> componentes de la IU (JLabel, JButton)
+--------------------------------------------------
+
+-------------------------------------
+Controladores con métodos vinculados
+
+onAction="#miMetodo"
+fx:id="miBoton"
+@FXML en la clase Java
+--------------------------------------
+
+------------------------------
+getChildren() -> trae una lista de los node
+getChildren() -> permite agregar node al panel getChildren().add(node) 
+show() -> permite visualizar la pantalla principal
+----------------------------------------------------------
+
+-------------------------------------------------------
+Layouts
+
+BorderPane 
+    setCenter() -> centro
+    setTop() -> arriba
+    setBottom() -> abajo
+    setLeft() -> izquierda
+    setRight() -> derecha
+
+---------------------------------
+General
+
+setMaxWidth() -> ancho máximo
+setMaxHeight() -> alto máximo
+setMargin() -> margen Insets -> inserta los tamaños
+-----------------------------------------------------
+
+VBox -> node en vertical
+HBox -> node en horizontal
+----------------------------
+
+---------------------------
+setFont -> tipo de fuente
+setCursor -> cambio de cursor
+setPromptText() -> 
+ImageView
+---------------------------
+
+--------------------------------
+spacing -> separación
+alignment -> alineación interna
+padding -> margen interno
+
+-----------------------
+tamaños
+
+prefWitdh
+prefHeight
+minWidth
+maxWidth
+fillWidth
+------------------------
+
+---------------------------------
+
+-------------------------
+css
+
+escena.getStylesheets().add(getClass).getResource("f.css").toExternalForm());
+
+.class_hola -> el " . " es una clase
+#id_hola -> el " # " es un id
+
+-fx-background-color: ;
+-fx-text-fill: ;
+-fx-border-color ;
+-fx-border-width: ;
+-fx-font-size ;
+-fx-font-weight ;
+-fx-font-family ;
+-fx-border-radius: ;
+-fx-background-radius: ;
+-fx-alignment: ;
+-fx-text-alignment: ;
+-fx-pref-width: ;
+-fx-pref-height: ;
+-------------------------
+
+-------------------------
+entrar a los estilos
+
+getStyleClass()
+     remove() remove("class.css")
+     add() add("class.css")
+-------------------------
+
