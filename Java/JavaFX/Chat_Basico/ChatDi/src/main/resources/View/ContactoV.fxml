@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import java.net.URL?>
+
+<StackPane fx:id="rootPane" prefHeight="650.0" prefWidth="1050.0" styleClass="sp-fondo-principal"
+           xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="Controller.ContactoC">
+
+    <stylesheets>
+        <URL value="@../CSS/Login.css"/>
+    </stylesheets>
+
+    <AnchorPane>
+        <Button text="← Regresar al Chat" onAction="#volverChat" styleClass="btn-crear" style="-fx-border-color: transparent; -fx-font-size: 15;" AnchorPane.topAnchor="20.0" AnchorPane.leftAnchor="20.0"/>
+
+        <ToggleButton fx:id="btnModoOscuro" onAction="#cambiarTema" styleClass="tb-circular" AnchorPane.topAnchor="20.0" AnchorPane.rightAnchor="20.0">
+            <graphic><ImageView fitHeight="30.0" fitWidth="30.0" preserveRatio="true"><Image url="@../Images/Fondos.png" /></ImageView></graphic>
+        </ToggleButton>
+    </AnchorPane>
+
+    <VBox styleClass="vb-tarjeta-login" spacing="20" alignment="CENTER" maxWidth="400" maxHeight="320">
+
+        <ImageView fitWidth="70" fitHeight="70" preserveRatio="true">
+            <Image url="@../Images/Contacto.png"/>
+        </ImageView>
+
+        <Label text="Añadir Nuevo Contacto" styleClass="lbl-titulo"/>
+        <Label text="Ingresa el correo electrónico del usuario" styleClass="lbl-subtitulo" style="-fx-padding: -10 0 10 0;"/>
+
+        <TextField fx:id="tfEmail" promptText="ejemplo@correo.com" styleClass="tf-input"/>
+
+        <Label fx:id="lbMensaje" visible="false" wrapText="true" styleClass="lbl-error"/>
+
+        <VBox spacing="12" alignment="CENTER" style="-fx-padding: 10 0 0 0;">
+            <Button text="Enviar Solicitud" onAction="#agregarContacto" styleClass="btn-ingresar" prefWidth="250"/>
+        </VBox>
+
+    </VBox>
+</StackPane>

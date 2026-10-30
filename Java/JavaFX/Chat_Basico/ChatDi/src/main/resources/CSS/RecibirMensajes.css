@@ -1,0 +1,41 @@
+.sp-mensaje, .sp-mensaje .viewport, .vb-fondo-mensaje {
+    -fx-background-color: #f8fafc;
+}
+
+.sp-burbuja-recibida {
+    -fx-background-color: #f3eafb;
+    -fx-background-radius: 15px 15px 15px 0px;
+    -fx-padding: 10px 15px;
+ }
+
+.sp-burbuja-enviada {
+    -fx-background-color: #614d8b;
+    -fx-background-radius: 15px 15px 0px 15px;
+    -fx-padding: 10px 15px;
+ }
+
+.lbl-texto-recibido {
+    -fx-text-fill: black;
+    -fx-font-size: 14px;
+ }
+
+.lbl-texto-enviado {
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+ }
+
+.dark-mode .sp-mensaje, .dark-mode .sp-mensaje .viewport, .dark-mode .vb-fondo-mensaje {
+     -fx-background-color: #0f172a;
+ }
+
+.dark-mode .sp-burbuja-enviada {
+    -fx-background-color: #0ea5e9;
+ }
+
+.dark-mode .sp-burbuja-recibida {
+   -fx-background-color: #1e293b;
+ }
+
+.dark-mode .lbl-texto-recibido {
+   -fx-text-fill: white;
+ }

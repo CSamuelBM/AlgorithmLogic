@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import java.net.URL?>
+<StackPane fx:id="rootPane" xmlns="http://javafx.com/javafx"
+           xmlns:fx="http://javafx.com/fxml" prefHeight="600.0" prefWidth="1000.0"
+           fx:controller="Controller.LoginC"
+           styleClass="sp-fondo-principal">
+
+    <stylesheets>
+        <URL value="@../CSS/Login.css"/>
+    </stylesheets>
+
+    <AnchorPane>
+        <ToggleButton fx:id="btnModoOscuro" onAction="#cambiarTema" styleClass="tb-circular" AnchorPane.topAnchor="15.0" AnchorPane.rightAnchor="15.0">
+            <graphic><ImageView fitHeight="25.0" fitWidth="25.0" preserveRatio="true"><Image url="@../Images/Fondos.png" /></ImageView></graphic>
+        </ToggleButton>
+    </AnchorPane>
+
+    <VBox styleClass="vb-tarjeta-login" spacing="20" alignment="CENTER" maxWidth="340" maxHeight="480">
+        <Label text="Bienvenido al chat" styleClass="lbl-titulo"/>
+        <VBox alignment="CENTER" spacing="5">
+            <ImageView fx:id="ivFoto" fitWidth="90" fitHeight="90"
+                       style="-fx-cursor: hand;" onMouseClicked="#seleccionarFoto">
+                <Image url="@../Images/anadir_chat.png"/>
+            </ImageView>
+            <Label text="Toca la foto para cambiarla" styleClass="lbl-subtitulo"/>
+        </VBox>
+
+        <VBox spacing="15" style="-fx-padding: 10 0 0 0;">
+            <TextField fx:id="tfNombre" promptText="Nombre de usuario" styleClass="tf-input"/>
+            <PasswordField fx:id="pfPassword" promptText="Contraseña" styleClass="tf-input"/>
+        </VBox>
+
+        <Label fx:id="lblError" visible="false" wrapText="true" styleClass="lbl-error"/>
+
+        <VBox spacing="12" alignment="CENTER">
+            <Button text="Ingresar" onAction="#ingresar" styleClass="btn-ingresar" prefWidth="250"/>
+            <Button text="Crear cuenta" onAction="#crearCuenta" styleClass="btn-crear" prefWidth="250"/>
+        </VBox>
+    </VBox>
+
+</StackPane>

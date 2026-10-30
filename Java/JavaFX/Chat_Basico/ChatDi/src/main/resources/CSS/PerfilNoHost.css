@@ -1,0 +1,46 @@
+.hb-fondo-perfil-invitado {
+     -fx-background-color: #d8cde6;
+     -fx-border-color: #cccccc;
+     -fx-border-width: 0 0 1 0;
+     -fx-pref-height: 70px;
+     -fx-alignment: center-left;
+     -fx-spacing: 15px;
+ }
+
+.lb-nombre-perfil-invitado {
+     -fx-font-weight: bold;
+     -fx-text-fill: #5b3e8c;
+ }
+
+.lb-disponible-perfil-invitado {
+     -fx-text-fill: #666666;
+     -fx-font-size: 12px;
+ }
+
+.btn-icono-buscar-chat {
+     -fx-background-color: transparent;
+     -fx-cursor: hand;
+ }
+
+.mb-opciones-perfil-invitado {
+     -fx-background-color: transparent;
+     -fx-cursor: hand;
+ }
+
+.btn-icono-buscar-chat:hover, .mb-opciones-perfil-invitado:hover {
+     -fx-background-color: rgba(255, 255, 255, 0.4);
+     -fx-background-radius: 50px;
+ }
+
+.dark-mode .hb-fondo-perfil-invitado {
+     -fx-background-color: #1e293b;
+     -fx-border-color: #334155;
+ }
+
+.dark-mode .lb-nombre-perfil-invitado {
+     -fx-text-fill: #f8fafc;
+ }
+
+.dark-mode .lb-disponible-perfil-invitado {
+     -fx-text-fill: #94a3b8;
+ }

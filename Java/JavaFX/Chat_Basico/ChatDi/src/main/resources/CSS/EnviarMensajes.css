@@ -1,0 +1,54 @@
+.hb-fondo-enviar {
+     -fx-background-color: #ffffff;
+     -fx-padding: 15px;
+     -fx-pref-height: 80px;
+     -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.05), 10, 0, 0, -3);
+ }
+
+.mb-adjuntos {
+     -fx-background-color: transparent;
+     -fx-font-size: 20px; -fx-cursor: hand;
+ }
+
+.mb-adjuntos .arrow, .mb-adjuntos .arrow-button {
+     -fx-padding: 0;
+     -fx-shape: null;
+ }
+
+.mb-adjuntos:hover {
+     -fx-background-color: rgba(0, 0, 0, 0.05);
+     -fx-background-radius: 50px;
+ }
+
+.tf-mensaje {
+     -fx-background-radius: 25px;
+     -fx-border-radius: 25px;
+     -fx-border-color: #e0e0e0;
+     -fx-padding: 0 20px;
+ }
+
+.tb-enviar-mensaje {
+     -fx-background-color: transparent;
+     -fx-font-size: 24px;
+     -fx-cursor: hand;
+ }
+
+.tb-enviar-mensaje:hover {
+      -fx-background-color: rgba(0, 0, 0, 0.05);
+      -fx-background-radius: 50px;
+ }
+
+.dark-mode .hb-fondo-enviar {
+     -fx-background-color: #1e293b;
+ }
+
+.dark-mode .tf-mensaje {
+      -fx-background-color: #0f172a;
+      -fx-border-color: #334155;
+      -fx-text-fill: white;
+ }
+
+.dark-mode .tb-enviar-mensaje {
+      -fx-background-color: #0ea5e9;
+      -fx-background-radius: 50px;
+ }
