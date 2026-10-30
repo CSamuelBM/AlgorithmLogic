@@ -1,0 +1,37 @@
+.hb-fondo-perfil-propietario {
+    -fx-background-color: #e6daed;
+    -fx-pref-height: 60px;
+    -fx-alignment: center-left;
+    -fx-spacing: 10px;
+ }
+
+.mb-perfil-moderno {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-text-fill: #5b3e8c;
+    -fx-cursor: hand;
+    -fx-background-radius: 20px;
+    -fx-padding: 5px 15px;
+}
+
+.mb-perfil-moderno:hover {
+     -fx-background-color: rgba(255, 255, 255, 0.4);
+ }
+
+.mb-perfil-moderno .arrow, .mb-perfil-moderno .arrow-button {
+     -fx-padding: 0; -fx-shape: null;
+ }
+
+.dark-mode .hb-fondo-perfil-propietario {
+    -fx-background-color: #1e293b;
+ }
+
+.dark-mode .mb-perfil-moderno {
+    -fx-text-fill: #38bdf8;
+ }
+
+.dark-mode .mb-perfil-moderno:hover {
+    -fx-background-color: rgba(56, 189, 248, 0.15);
+ }

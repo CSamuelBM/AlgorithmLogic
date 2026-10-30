@@ -1,0 +1,111 @@
+.sp-fondo-principal {
+     -fx-background-color: #f0f2f5;
+ }
+
+.vb-tarjeta-login {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 20px;
+    -fx-padding: 40px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 15, 0, 0, 5);
+ }
+
+.lbl-titulo {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1e293b;
+ }
+
+.lbl-subtitulo {
+    -fx-font-size: 12px;
+    -fx-text-fill: #64748b;
+ }
+
+.lbl-error {
+    -fx-text-fill: #ef4444;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+ }
+
+.tf-input {
+    -fx-background-radius: 12px;
+    -fx-border-radius: 12px;
+    -fx-border-color: #cbd5e1;
+    -fx-background-color: #f8fafc;
+    -fx-padding: 12px;
+    -fx-font-size: 14px;
+ }
+
+.tf-input:focused {
+    -fx-border-color: #0ea5e9;
+    -fx-background-color: #ffffff;
+ }
+
+.btn-ingresar {
+    -fx-background-color: #0ea5e9;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+    -fx-background-radius: 12px;
+    -fx-padding: 12px;
+    -fx-cursor: hand;
+ }
+
+.btn-ingresar:hover {
+    -fx-background-color: #0284c7;
+ }
+
+.btn-crear {
+    -fx-background-color: transparent;
+    -fx-text-fill: #0ea5e9;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-border-color: #0ea5e9;
+    -fx-border-radius: 12px;
+    -fx-padding: 12px;
+    -fx-cursor: hand;
+ }
+
+.btn-crear:hover {
+    -fx-background-color: rgba(14, 165, 233, 0.1);
+ }
+
+.tb-circular {
+   -fx-background-color: transparent;
+   -fx-cursor: hand;
+   -fx-background-radius: 50px;
+   -fx-padding: 5px;
+ }
+
+.tb-circular:hover {
+    -fx-background-color: rgba(0,0,0,0.1);
+ }
+
+.dark-mode.sp-fondo-principal {
+    -fx-background-color: #0f172a;
+ }
+
+.dark-mode .vb-tarjeta-login {
+    -fx-background-color: #1e293b;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 20, 0, 0, 8);
+}
+
+.dark-mode .lbl-titulo {
+    -fx-text-fill: #f8fafc;
+ }
+
+.dark-mode .lbl-subtitulo {
+    -fx-text-fill: #94a3b8;
+ }
+
+.dark-mode .tf-input {
+    -fx-background-color: #0f172a;
+    -fx-border-color: #334155;
+    -fx-text-fill: white;
+ }
+.dark-mode .tf-input:focused {
+    -fx-border-color: #38bdf8;
+ }
+
+.dark-mode .tb-circular:hover {
+   -fx-background-color: rgba(255,255,255,0.1);
+ }

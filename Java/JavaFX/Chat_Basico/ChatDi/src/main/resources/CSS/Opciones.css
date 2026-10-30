@@ -1,0 +1,33 @@
+.hb-barra_opciones_usuarios {
+     -fx-border-color: #cccccc;
+     -fx-border-width: 0 1 0 0;
+     -fx-pref-width: 280px;
+ }
+
+.vb-barra_opciones {
+    -fx-background-color: #fdf5fb;
+ }
+
+.tb-circular {
+    -fx-background-radius: 50px;
+    -fx-pref-width: 65px;
+    -fx-pref-height: 65px;
+    -fx-cursor: hand;
+    -fx-background-color: transparent;
+ }
+
+.tb-circular:hover {
+    -fx-background-color: rgba(0,0,0,0.05);
+ }
+
+ .dark-mode .hb-barra_opciones_usuarios {
+    -fx-border-color: #1e293b;
+ }
+
+ .dark-mode .vb-barra_opciones {
+    -fx-background-color: #0f172a;
+ }
+
+ .dark-mode .tb-circular:hover {
+     -fx-background-color: #1e293b;
+ }

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+<?import java.net.URL?>
+
+<HBox fx:id="rootPane" prefHeight="600.0" prefWidth="1000.0"
+      xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="Controller.ClienteC">
+
+    <stylesheets>
+        <URL value="@../CSS/Opciones.css"/>
+        <URL value="@../CSS/PerfilHost.css"/>
+        <URL value="@../CSS/Buscar.css"/>
+        <URL value="@../CSS/PerfilNoHost.css"/>
+        <URL value="@../CSS/RecibirMensajes.css"/>
+        <URL value="@../CSS/EnviarMensajes.css"/>
+    </stylesheets>
+
+    <HBox styleClass="hb-barra_opciones_usuarios" minWidth="280.0">
+
+        <VBox styleClass="vb-barra_opciones" prefWidth="85.0" spacing="25.0"
+              alignment="TOP_CENTER" style="-fx-padding: 20 0 0 0;">
+            <ToggleButton styleClass="tb-circular">
+                <graphic><ImageView fitHeight="45.0" fitWidth="45.0" preserveRatio="true"><Image url="@../Images/Mensaje.png" /></ImageView></graphic>
+            </ToggleButton>
+            <ToggleButton styleClass="tb-circular">
+                <graphic><ImageView fitHeight="45.0" fitWidth="45.0" preserveRatio="true"><Image url="@../Images/Contacto.png" /></ImageView></graphic>
+            </ToggleButton>
+            <ToggleButton styleClass="tb-circular">
+                <graphic><ImageView fitHeight="45.0" fitWidth="45.0" preserveRatio="true"><Image url="@../Images/Configuracion.png" /></ImageView></graphic>
+            </ToggleButton>
+            <Region VBox.vgrow="ALWAYS" />
+
+            <ToggleButton fx:id="btnModoOscuro" onAction="#cambiarTema" styleClass="tb-circular">
+                <graphic><ImageView fitHeight="40.0" fitWidth="40.0" preserveRatio="true"><Image url="@../Images/Fondos.png" /></ImageView></graphic>
+            </ToggleButton>
+        </VBox>
+
+        <VBox HBox.hgrow="ALWAYS" styleClass="vb-lista-chats">
+
+            <HBox styleClass="hb-fondo-perfil-propietario">
+                <Region prefWidth="10.0"/>
+                <ImageView fx:id="ivFotoPerfil" styleClass="lb-icono-perfil-invitado" style="-fx-font-size: 35;"/>
+                <MenuButton fx:id="mbPerfil" text="MI PERFIL" styleClass="mb-perfil-moderno">
+                    <items>
+                        <MenuItem text="Disponible" onAction="#estadoDisponible"/>
+                        <MenuItem text="Ausente" onAction="#estadoAusente"/>
+                        <MenuItem text="Ocupado" onAction="#estadoOcupado"/>
+                        <MenuItem text="No Disponible" onAction="#estadoNoDisponible"/>
+                        <MenuItem text="Invisible" onAction="#estadoInvisible"/>
+                        <SeparatorMenuItem />
+                        <MenuItem text="Cerrar sesión" onAction="#cerrarSesion"/>
+                    </items>
+                </MenuButton>
+            </HBox>
+
+            <HBox styleClass="hb-fondo-buscar" spacing="5.0">
+                <TextField fx:id="tfBuscar" promptText="Buscar..." styleClass="tf_buscar" HBox.hgrow="ALWAYS"/>
+                <Button text="+" onAction="#agregarContacto" style="-fx-background-color: transparent; -fx-cursor: hand; -fx-font-size: 22; -fx-font-weight: bold; -fx-text-fill: #5b3e8c;"/>
+                <Button text="..." onAction="#solicitudUsuario" style="-fx-background-color: transparent; -fx-cursor: hand; -fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: #5b3e8c;" />
+            </HBox>
+
+            <ListView fx:id="listaContactos" VBox.vgrow="ALWAYS" />
+        </VBox>
+    </HBox>
+
+    <BorderPane HBox.hgrow="ALWAYS">
+
+        <top>
+            <HBox styleClass="hb-fondo-perfil-invitado" prefHeight="75.0">
+                <Region prefWidth="15.0"/>
+
+                <VBox alignment="CENTER_LEFT">
+                    <Region prefHeight="10.0"/>
+                    <Label fx:id="lbNombreUsuarioChat" text="Usuario" styleClass="lb-nombre-perfil-invitado" style="-fx-font-size: 18;"/>
+                    <Label fx:id="lbEstadoUsuarioChat" text="Desconocido" styleClass="lb-disponible-perfil-invitado"/>
+                </VBox>
+
+                <Region HBox.hgrow="ALWAYS" />
+                <Button styleClass="btn-icono-buscar-chat"><graphic><ImageView fitHeight="35.0" fitWidth="35.0" preserveRatio="true"><Image url="@../Images/Videollamada.png" /></ImageView></graphic></Button>
+                <Button styleClass="btn-icono-buscar-chat"><graphic><ImageView fitHeight="35.0" fitWidth="35.0" preserveRatio="true"><Image url="@../Images/Llamada.png" /></ImageView></graphic></Button>
+                <Region prefWidth="10.0"/>
+                <Button styleClass="btn-icono-buscar-chat"><graphic><ImageView fitHeight="35.0" fitWidth="35.0" preserveRatio="true"><Image url="@../Images/Notificaciones.png" /></ImageView></graphic></Button>
+
+                <MenuButton styleClass="mb-opciones-perfil-invitado">
+                    <graphic><ImageView fitHeight="30.0" fitWidth="30.0" preserveRatio="true"><Image url="@../Images/Configuracion.png" /></ImageView></graphic>
+                    <items>
+                        <MenuItem text=" Bloquear contacto" onAction="#bloquearContacto" styleClass="mi-opciones"><graphic><ImageView fitHeight="20.0" fitWidth="20.0"><Image url="@../Images/Bloquear.png" /></ImageView></graphic></MenuItem>
+                        <MenuItem text=" Desbloquear contacto" onAction="#desbloquearContacto" styleClass="mi-opciones"><graphic><ImageView fitHeight="20.0" fitWidth="20.0"><Image url="@../Images/Desbloquear.png" /></ImageView></graphic></MenuItem>
+                        <MenuItem text=" Borrar historial" onAction="#borrarHistorial" styleClass="mi-opciones"><graphic><ImageView fitHeight="20.0" fitWidth="20.0"><Image url="@../Images/Borrar.png" /></ImageView></graphic></MenuItem>
+                        <MenuItem text=" Cambiar fondo" styleClass="mi-opciones"><graphic><ImageView fitHeight="20.0" fitWidth="20.0"><Image url="@../Images/Fondos.png" /></ImageView></graphic></MenuItem>
+                        <MenuItem text=" Añadir al chat" styleClass="mi-opciones"><graphic><ImageView fitHeight="20.0" fitWidth="20.0"><Image url="@../Images/anadir_chat.png" /></ImageView></graphic></MenuItem>
+                    </items>
+                </MenuButton>
+                <Region prefWidth="15.0"/>
+            </HBox>
+        </top>
+
+        <center>
+            <ScrollPane fx:id="spMostrarMensajes" fitToWidth="true" fitToHeight="true" styleClass="sp-mensaje" HBox.hgrow="ALWAYS">
+                <VBox fx:id="vbMostrarMensajes" styleClass="vb-fondo-mensaje" spacing="15.0" style="-fx-padding: 20 100 20 100;"/>
+            </ScrollPane>
+        </center>
+
+        <bottom>
+            <HBox styleClass="hb-fondo-enviar" prefHeight="75.0">
+                <MenuButton popupSide="TOP" styleClass="mb-adjuntos" style="-fx-font-size: 20;">
+                    <graphic>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" preserveRatio="true">
+                            <Image url="@../Images/Documentos.png" />
+                        </ImageView>
+                    </graphic>
+                    <items>
+                        <MenuItem fx:id="documento" text=" Enviar Documento..." styleClass="mi-opciones">
+                            <graphic><ImageView fitHeight="20.0" fitWidth="20.0"><Image url="@../Images/Documentos.png" /></ImageView></graphic>
+                        </MenuItem>
+                        <MenuItem fx:id="imagen" text=" Compartir Imágenes..." styleClass="mi-opciones">
+                            <graphic><ImageView fitHeight="20.0" fitWidth="20.0"><Image url="@../Images/fotos_y_video.png" /></ImageView></graphic>
+                        </MenuItem>
+                        <MenuItem fx:id="video" text=" Enviar Video..." styleClass="mi-opciones">
+                            <graphic><ImageView fitHeight="20.0" fitWidth="20.0"><Image url="@../Images/Stickers.png" /></ImageView></graphic>
+                        </MenuItem>
+                        <MenuItem fx:id="audio" text=" Enviar Audio..." styleClass="mi-opciones">
+                            <graphic><ImageView fitHeight="20.0" fitWidth="20.0"><Image url="@../Images/Stickers.png" /></ImageView></graphic>
+                        </MenuItem>
+                        <MenuItem fx:id="animacion" text=" Enviar Animacion..." styleClass="mi-opciones">
+                            <graphic><ImageView fitHeight="20.0" fitWidth="20.0"><Image url="@../Images/Stickers.png" /></ImageView></graphic>
+                        </MenuItem>
+                        <MenuItem fx:id="musica" text=" Enviar Musica..." styleClass="mi-opciones">
+                            <graphic><ImageView fitHeight="20.0" fitWidth="20.0"><Image url="@../Images/Stickers.png" /></ImageView></graphic>
+                        </MenuItem>
+                    </items>
+                </MenuButton>
+
+                <Button text="A" styleClass="btn-formato" />
+                <Button fx:id="btnEmoji" text="😊" onAction="#mostrarEmoticon" styleClass="btn-emoji" style="-fx-background-color: transparent; -fx-cursor: hand; -fx-font-size: 28;"/>
+                <Button fx:id="btnBuzz" text="📳" onAction="#enviarZumbador" styleClass="btn-formato" style="-fx-background-color: transparent; -fx-cursor: hand; -fx-font-size: 26;" />
+
+                <TextField fx:id="tfMensaje" promptText="Escribir un mensaje..." HBox.hgrow="ALWAYS" styleClass="tf-mensaje" style="-fx-font-size: 16; -fx-pref-height: 50;"/>
+
+                <ToggleButton onAction="#enviarMensaje" styleClass="tb-enviar-mensaje" style="-fx-background-color: transparent; -fx-cursor: hand;">
+                    <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" preserveRatio="true">
+                            <Image url="@../Images/Mensaje.png" />
+                        </ImageView>
+                    </graphic>
+                </ToggleButton>
+            </HBox>
+        </bottom>
+    </BorderPane>
+
+</HBox>

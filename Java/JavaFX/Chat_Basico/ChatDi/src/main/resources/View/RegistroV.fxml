@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import java.net.URL?>
+<StackPane fx:id="rootPane" xmlns="http://javafx.com/javafx"
+           xmlns:fx="http://javafx.com/fxml"
+           fx:controller="Controller.RegistroC" prefHeight="600.0" prefWidth="1000.0"
+           styleClass="sp-fondo-principal">
+
+    <stylesheets>
+        <URL value="@../CSS/Login.css"/>
+    </stylesheets>
+
+    <AnchorPane>
+        <Button text="← Regresar" onAction="#volverLogin" styleClass="btn-crear" style="-fx-border-color: transparent; -fx-font-size: 14;" AnchorPane.topAnchor="15.0" AnchorPane.leftAnchor="15.0"/>
+
+        <ToggleButton fx:id="btnModoOscuro" onAction="#cambiarTema" styleClass="tb-circular" AnchorPane.topAnchor="15.0" AnchorPane.rightAnchor="15.0">
+            <graphic><ImageView fitHeight="25.0" fitWidth="25.0" preserveRatio="true"><Image url="@../Images/Fondos.png" /></ImageView></graphic>
+        </ToggleButton>
+    </AnchorPane>
+
+    <VBox styleClass="vb-tarjeta-login" spacing="15" alignment="CENTER" maxWidth="340" maxHeight="500">
+        <ImageView fx:id="ivFoto" fitWidth="90" fitHeight="90" styleClass="iv-foto"
+                   style="-fx-cursor: hand;" onMouseClicked="#seleccionarFoto">
+            <Image url="@../Images/anadir_chat.png"/>
+        </ImageView>
+        <Label text="Toca para añadir tu foto" styleClass="lbl-subtitulo"/>
+
+        <TextField fx:id="tfNombre" promptText="Nombre de usuario" styleClass="tf-input"/>
+        <PasswordField fx:id="pfPassword" promptText="Contraseña" styleClass="tf-input"/>
+        <TextField fx:id="tfEmail" promptText="Correo" styleClass="tf-input"/>
+
+        <Label fx:id="lblError" visible="false" wrapText="true" styleClass="lbl-error"/>
+
+        <Button text="Registrar" onAction="#crearCuenta" styleClass="btn-ingresar"/>
+    </VBox>
+
+</StackPane>

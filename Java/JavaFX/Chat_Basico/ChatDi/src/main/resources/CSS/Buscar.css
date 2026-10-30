@@ -1,0 +1,49 @@
+.hb-fondo-buscar {
+        -fx-background-color: #f0f0f0;
+        -fx-padding: 10px;
+        -fx-pref-height: 50px;
+        -fx-alignment: center;
+ }
+
+.tf_buscar {
+        -fx-background-radius: 15px;
+        -fx-background-color: white;
+        -fx-border-color: #cccccc;
+        -fx-border-radius: 15px;
+        -fx-padding: 8px;
+ }
+
+#listaContactos {
+     -fx-background-color: white;
+     -fx-control-inner-background: white;
+     -fx-background-insets: 0;
+ }
+
+#listaContactos .list-cell {
+      -fx-background-color: transparent;
+      -fx-text-fill: #333333;
+ }
+
+.dark-mode .hb-fondo-buscar {
+       -fx-background-color: #0f172a;
+ }
+
+.dark-mode .tf_buscar {
+       -fx-background-color: #1e293b;
+       -fx-text-fill: white;
+       -fx-border-color: #334155;
+ }
+
+.dark-mode #listaContactos {
+       -fx-background-color: #0f172a;
+       -fx-control-inner-background: #0f172a;
+ }
+
+.dark-mode #listaContactos .list-cell {
+        -fx-text-fill: #f8fafc;
+ }
+
+.dark-mode #listaContactos .list-cell:selected {
+        -fx-background-color: #1e293b;
+        -fx-text-fill: #38bdf8;
+ }
