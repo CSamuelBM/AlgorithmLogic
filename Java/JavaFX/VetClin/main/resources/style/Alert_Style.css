@@ -1,0 +1,50 @@
+.card-notification {
+    -fx-background-color: -fx-color-background-purple;
+    -fx-background-radius: 20;
+    -fx-effect: dropshadow(gaussian, -fx-color-background-white-gray, 1, 0.1, 0, 1);
+    -fx-padding: 30px;
+    -fx-pref-width: 350px;
+    -fx-pref-height: 200px;
+}
+
+.card-notification-error {
+    -fx-background-color:-fx-color-background-red;
+    -fx-background-radius: 20;
+    -fx-effect: dropshadow(gaussian, -fx-color-background-white-gray, 1, 0.1, 0, 1);
+    -fx-padding: 30px;
+    -fx-pref-width: 350px;
+    -fx-pref-height: 200px;
+}
+
+.card-notification-success {
+    -fx-background-color:-fx-color-background-green;
+    -fx-background-radius: 20;
+    -fx-effect: dropshadow(gaussian, -fx-color-background-white-gray, 1, 0.1, 0, 1);
+    -fx-padding: 30px;
+    -fx-pref-width: 350px;
+    -fx-pref-height: 200px;
+}
+
+.button-purple-alert {
+    -fx-background-color: -fx-color-background-purple;
+
+    -fx-background-radius: 10;
+
+    -fx-text-fill: -fx-color-text-white;
+    -fx-font-weight: 700;
+
+    -fx-cursor: hand;
+    -fx-font-size: 16px;
+
+    -fx-min-width: 60;
+    -fx-max-width: 100;
+    -fx-pref-width: 80;
+
+    -fx-min-height: 50;
+    -fx-max-height: 70;
+    -fx-pref-height: 60;
+}
+
+.button-purple-alert:hover {
+   -fx-background-color: -fx-color-button-hover;
+}

@@ -1,0 +1,19 @@
+.card-login {
+   -fx-background-color: -fx-color-background-white;
+   -fx-effect: dropshadow(gaussian, -fx-color-background-white-gray, 16, 0.4, 0, 6);
+
+   -fx-padding: 32 25 32 25;
+   -fx-spacing: 20;
+
+   -fx-alignment: center;
+
+    -fx-min-width: 300;
+    -fx-max-width: 500;
+    -fx-pref-width: 400;
+
+    -fx-min-height: 400;
+    -fx-max-height: 600;
+    -fx-pref-height: 500;
+
+   -fx-background-radius: 18;
+}

@@ -1,0 +1,38 @@
+.card-record {
+   -fx-background-color: -fx-color-background-white;
+   -fx-effect: dropshadow(gaussian, -fx-color-background-white-gray, 1, 0.1, 0, 1);
+
+   -fx-padding: 30 0 30 0;
+   -fx-spacing: 30;
+
+   -fx-alignment: center;
+
+   -fx-min-width: 400;
+   -fx-max-width: 600;
+   -fx-pref-width: 500;
+
+   -fx-min-height: 100;
+   -fx-max-height: 150;
+   -fx-pref-height: 130;
+
+   -fx-background-radius: 18;
+}
+
+.button-role {
+  -fx-background-color: transparent;
+
+  -fx-cursor: hand;
+  -fx-padding: 0;
+
+  -fx-min-width: 100;
+  -fx-max-width: 300;
+  -fx-pref-width: 200
+}
+
+.button-role:hover {
+   -fx-effect: dropshadow(gaussian, -fx-color-button-hover, 30, 0.0, 0, 0);
+}
+
+.button-role:pressed{
+   -fx-effect: dropshadow(gaussian, -fx-color-background-white-gray, 30, 0.0, 0, 0);
+}
