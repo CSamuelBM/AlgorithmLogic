@@ -1,0 +1,26 @@
+/*xd*/
+.card-status {
+    -fx-background-color: -fx-color-background-white;
+    -fx-effect: dropshadow(gaussian, -fx-color-background-white-gray, 1, 0.1, 0, 1);
+
+    -fx-alignment: center;
+
+    -fx-min-width: 150;
+    -fx-max-width: 300;
+    -fx-pref-width: 250;
+
+    -fx-min-height: 100;
+    -fx-max-height: 250;
+    -fx-pref-height: 150;
+
+    -fx-background-radius: 15;
+}
+
+.card-appointment-complete {
+    -fx-background-color: -fx-color-background-white;
+    -fx-effect: dropshadow(gaussian, -fx-color-background-white-gray, 1, 0.1, 0, 1);
+
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+    -fx-min-height: 140;
+}

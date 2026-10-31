@@ -1,0 +1,237 @@
+.card-decoration {
+    -fx-background-color: -fx-color-background-white;
+    -fx-effect: dropshadow(gaussian, -fx-color-background-white-gray, 16, 0.4, 0, 6);
+
+    -fx-padding: 32 25 32 25;
+
+    -fx-alignment: center;
+
+    -fx-min-width: 400;
+    -fx-max-width: 1600;
+    -fx-pref-width: 900;
+
+    -fx-min-height: 80;
+    -fx-max-height: 200;
+    -fx-pref-height: 100;
+}
+
+.card-navigation {
+    -fx-background-color: -fx-color-background-white;
+    -fx-effect: dropshadow(gaussian, -fx-color-background-white-gray, 1, 0.1, 0, 1);
+
+    -fx-padding: 10 32;
+    -fx-alignment: center;
+
+    -fx-min-width: 500;
+    -fx-max-width: 1400;
+    -fx-pref-width: 900;
+
+    -fx-min-height: 50;
+    -fx-max-height: 100;
+    -fx-pref-height: 90;
+
+    -fx-background-radius: 10;
+}
+
+.button-purple-navigation {
+    -fx-background-color: transparent;
+
+    -fx-background-radius: 10;
+
+    -fx-text-fill: -fx-color-text-black;
+    -fx-font-weight: 700;
+
+    -fx-cursor: hand;
+    -fx-font-size: 16px;
+
+    -fx-min-width: 300;
+    -fx-max-width: 500;
+    -fx-pref-width: 400;
+
+    -fx-min-height: 30;
+    -fx-max-height: 50;
+    -fx-pref-height: 40;
+}
+
+.button-purple-navigation:selected {
+    -fx-background-color: -fx-color-background-purple;
+}
+
+.button-purple-navigation:hover {
+   -fx-background-color: -fx-color-button-hover;
+}
+
+.card-veterinary {
+    -fx-background-color: -fx-color-background-white;
+    -fx-effect: dropshadow(gaussian, -fx-color-background-white-gray, 1, 0.1, 0, 1);
+
+    -fx-alignment: center;
+
+    -fx-min-width: 400;
+    -fx-max-width: 600;
+    -fx-pref-width: 500;
+
+    -fx-min-height: 100;
+    -fx-max-height: 200;
+    -fx-pref-height: 150;
+
+    -fx-background-radius: 10;
+}
+
+.card-record-pet {
+    -fx-background-color: -fx-color-background-white;
+    -fx-effect: dropshadow(gaussian, -fx-color-background-white-gray, 1, 0.1, 0, 1);
+
+    -fx-alignment: center;
+
+    -fx-min-width: 500;
+    -fx-max-width: 700;
+    -fx-pref-width: 600;
+
+    -fx-min-height: 300;
+    -fx-max-height: 500;
+    -fx-pref-height: 400;
+
+    -fx-background-radius: 15;
+}
+
+.spinner {
+   -fx-background-color: -fx-color-background-white;
+
+   -fx-border-color: transparent;
+   -fx-border-width: 2;
+   -fx-border-radius: 10;
+
+    -fx-min-width: 200;
+    -fx-max-width: 400;
+    -fx-pref-width: 300;
+}
+
+.spinner .text-field {
+   -fx-font-family: "Nunito";
+   -fx-font-size: 14;
+   -fx-font-weight: 300;
+   -fx-text-fill: -fx-color-text-black;
+}
+
+.spinner .increment-arrow-button,
+.spinner .decrement-arrow-button {
+   -fx-background-color: -fx-color-background-white-gray;
+   -fx-background-radius: 10;
+}
+
+.spinner .increment-arrow,
+.spinner .decrement-arrow {
+   -fx-background-color: -fx-color-background-white-gray;
+}
+
+.spinner:focused {
+   -fx-background-color: transparent;
+
+   -fx-border-color: transparent;
+   -fx-border-width: 2;
+   -fx-border-radius: 10;
+}
+
+.combo-box {
+   -fx-background-color: -fx-color-background-white;
+
+   -fx-background-radius: 10;
+   -fx-border-color: -fx-color-background-white-gray;
+   -fx-border-radius: 10;
+
+   -fx-padding: 8;
+   -fx-font-size: 14;
+
+    -fx-min-width: 200;
+    -fx-max-width: 400;
+    -fx-pref-width: 300;
+}
+
+.combo-box:hover {
+   -fx-background-color: -fx-color-button-hover;
+}
+
+.combo-box:focused {
+  -fx-border-color: -fx-color-text-black;
+  -fx-border-radius: 10;
+  -fx-border-width: 2;
+}
+
+.combo-box: .arrow-button {
+   -fx-background-color: transparent;
+}
+
+.combo-box-popup .list-view {
+   -fx-background-color: -fx-color-background-white;
+}
+
+.combo-box-popup .list-cell {
+   -fx-text-fill: -fx-color-text-black;
+   -fx-padding: 8;
+   -fx-font-size: 16;
+}
+
+.combo-box-popup .list-cell:hover {
+   -fx-background-color: -fx-color-button-hover;
+}
+
+.button-white {
+    -fx-background-color: -fx-color-background-white;
+
+    -fx-background-radius: 10;
+    -fx-border-color: -fx-color-text-black;
+    -fx-border-radius: 10;
+
+    -fx-text-fill: -fx-color-text-black;
+    -fx-font-weight: 700;
+
+    -fx-cursor: hand;
+    -fx-font-size: 16px;
+
+    -fx-min-width: 80;
+    -fx-max-width: 100;
+    -fx-pref-width: 90;
+
+    -fx-min-height: 50;
+    -fx-max-height: 70;
+    -fx-pref-height: 60;
+}
+
+.button-white:hover {
+   -fx-background-color: -fx-color-button-hover;
+}
+
+.card-pet {
+    -fx-background-color: -fx-color-background-white;
+    -fx-effect: dropshadow(gaussian, -fx-color-background-white-gray, 1, 0.1, 0, 1);
+
+    -fx-alignment: center;
+
+    -fx-min-width: 300;
+    -fx-max-width: 600;
+    -fx-pref-width: 400;
+
+    -fx-min-height: 100;
+    -fx-max-height: 250;
+    -fx-pref-height: 150;
+
+    -fx-background-radius: 15;
+}
+
+.card-appointment {
+    -fx-background-color: -fx-color-background-white;
+    -fx-effect: dropshadow(gaussian, -fx-color-background-white-gray, 1, 0.1, 0, 1);
+
+    -fx-alignment: center;
+
+    -fx-min-width: 700;
+    -fx-max-width: 900;
+    -fx-pref-width: 800;
+
+    -fx-min-height: 100;
+    -fx-max-height: 300;
+    -fx-pref-height: 200;
+
+    -fx-background-radius: 15;
+}

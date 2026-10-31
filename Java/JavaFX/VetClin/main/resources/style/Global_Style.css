@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
+
+.root {
+   /* Variables de colores */
+   -fx-background-color: rgba(232, 244, 255, 1);
+
+   -fx-color-background-blue: rgba(232, 244, 255, 1);
+   -fx-color-background-white-gray: rgba(168, 168, 168, 1);
+   -fx-color-background-white: rgba(255, 255, 255, 1);
+   -fx-color-background-purple: rgba(118, 57, 219, 1);
+
+   -fx-color-background-green: rgba(13, 224, 60, 1);
+   -fx-color-background-orange: rgba(224, 154, 13, 1);
+   -fx-color-background-red: rgba(224, 13, 13, 1);
+
+   -fx-color-text-black: rgba(0, 0, 0, 1);
+   -fx-color-text-white: rgba(255, 255, 255, 1);
+   -fx-color-text-purple: rgba(99, 23, 212, 1);
+
+   -fx-color-button-hover: rgba(215, 215, 222, 1);
+}
+
+.text-title {
+    -fx-font-family: "Nunito";
+
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+
+    -fx-text-fill: -fx-color-text-black;
+}
+
+.text-main {
+    -fx-font-family: "Nunito";
+
+    -fx-font-size: 18px;
+    -fx-font-weight: 600;
+
+    -fx-text-fill: -fx-color-text-black;
+}
+
+.text-secondary-black {
+    -fx-font-family: "Nunito";
+
+    -fx-font-size: 16px;
+    -fx-font-weight: 500;
+
+    -fx-text-fill: -fx-color-text-black;
+}
+
+.text-secondary-white {
+    -fx-font-family: "Nunito";
+
+    -fx-font-size: 16px;
+    -fx-font-weight: 500;
+
+    -fx-text-fill: -fx-color-text-white;
+}
+
+.text-secondary-purple {
+    -fx-font-family: "Nunito";
+
+    -fx-font-size: 16px;
+    -fx-font-weight: 500;
+
+    -fx-text-fill: -fx-color-text-purple;
+
+    -fx-min-height: 100;
+    -fx-max-height: 300;
+    -fx-pref-height: 200;
+}
+
+.button-purple {
+    -fx-background-color: -fx-color-background-purple;
+
+    -fx-background-radius: 10;
+
+    -fx-text-fill: -fx-color-text-white;
+    -fx-font-weight: 700;
+
+    -fx-cursor: hand;
+    -fx-font-size: 16px;
+
+    -fx-min-width: 100;
+    -fx-max-width: 300;
+    -fx-pref-width: 200;
+
+    -fx-min-height: 50;
+    -fx-max-height: 70;
+    -fx-pref-height: 60;
+}
+
+.button-purple:hover {
+   -fx-background-color: -fx-color-button-hover;
+}
+
+.button-red {
+   -fx-background-color: -fx-color-background-red;
+
+   -fx-background-radius: 10;
+
+   -fx-text-fill: -fx-color-text-white;
+   -fx-font-weight: 600;
+
+   -fx-cursor: hand;
+   -fx-font-size: 16px;
+
+   -fx-min-width: 70;
+   -fx-max-width: 100;
+   -fx-pref-width: 80;
+
+   -fx-min-height: 50;
+   -fx-max-height: 70;
+   -fx-pref-height: 60;
+}
+
+.button-red:hover {
+   -fx-background-color: -fx-color-button-hover;
+}
+
+.text-field,
+.password-field {
+    -fx-background-color: -fx-color-background-white;
+
+    -fx-background-radius: 10;
+    -fx-border-color: -fx-color-background-white-gray;
+    -fx-border-radius: 10;
+
+    -fx-font-family: "Nunito";
+    -fx-font-size: 14;
+    -fx-font-weight: 300;
+    -fx-text-fill: -fx-color-text-black;
+    -fx-prompt-text-fill: -fx-color-text-black;
+
+    -fx-padding: 14 18 14 18;
+
+    -fx-min-width: 200;
+    -fx-max-width: 400;
+    -fx-pref-width: 300;
+}
+
+.text-field:focused {
+     -fx-background-color: -fx-color-background-white;
+
+     -fx-border-color: -fx-color-text-black;
+     -fx-border-width: 2;
+     -fx-border-radius: 10;
+}
+
+.password-field {
+    -fx-text-fill: -fx-color-text-black;
+}
+
+.scroll-pane {
+   -fx-background-color: transparent;
+   -padding: 10;
+}
+
+.scroll-pane > .viewport {
+   -fx-background-color: transparent;
+}
+
+.scroll-pane:vertical {
+   -fx-background-color: transparent;
+   -fx-pref-width: 10;
+}
+
+.scroll-pane:horizontal {
+   -fx-background-color: transparent;
+   -fx-pref-height: 10;
+}
+
+.scroll-pane .thumb {
+   -fx-background-color: -fx-color-background-purple;
+   -fx-background-radius: 20;
+}
+
+.scroll-pane .thumb:hover {
+   -fx-background-color: -fx-color-background-purple;
+}
+
+.scroll-pane .track {
+   -fx-background-color: -fx-color-background-blue;
+   -fx-background-radius: 20;
+}
+
+.scroll-pane .increment-button,
+.scroll-pane .decrement-button {
+   -fx-background-color: transparent;
+   -fx-padding: 0;
+}
+
+.scroll-pane .increment-arrow,
+.scroll-pane .decrement-arrow {
+   -fx-shape: "";
+   -fx-padding: 0;
+}
