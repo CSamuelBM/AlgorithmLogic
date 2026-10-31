@@ -1,0 +1,188 @@
+/* =========================================
+   login.css — Pantalla de inicio de sesión
+   ========================================= */
+
+/* ----- Fuentes ----- */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
+
+/* ----- Variables de color ----- */
+* {
+    -fx-color-bg:        #e8d5ce;   /* Fondo rosado pálido  */
+    -fx-color-card:      #7d97a8;   /* Azul grisáceo        */
+    -fx-color-card-dark: #6a8595;   /* Tono más oscuro      */
+    -fx-color-white:     #ffffff;
+    -fx-color-label:     #ffffff;
+    -fx-color-sublabel:  #c8d9e1;
+    -fx-color-fieldlbl:  #ddeaf0;
+    -fx-color-accent:    #c0917a;   /* Salmon/terracota     */
+    -fx-color-btn:       #4d6b7a;   /* Botón oscuro         */
+    -fx-color-btn-hover: #3d5a68;
+    -fx-color-dots:      #5a9a7a;   /* Verde de los dots    */
+}
+
+/* ----- Fondo general ----- */
+.background {
+    -fx-background-color: #e8d5ce;
+    -fx-min-width:  100%;
+    -fx-min-height: 100%;
+    -fx-alignment: CENTER;
+}
+
+/* ----- Tarjeta ----- */
+.card {
+    -fx-background-color: #7d97a8;
+    -fx-background-radius: 18;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.22), 24, 0.4, 0, 6);
+    -fx-padding: 0 0 32 0;
+    -fx-pref-width: 420;
+    -fx-min-width:  380;
+}
+
+/* ----- Encabezado ----- */
+.card-header {
+    -fx-padding: 40 40 24 40;
+    -fx-alignment: CENTER;
+    -fx-spacing: 6;
+}
+
+.title {
+    -fx-font-family: 'Nunito';
+    -fx-font-size: 30px;
+    -fx-font-weight: 800;
+    -fx-text-fill: #ffffff;
+}
+
+.subtitle {
+    -fx-font-family: 'Nunito';
+    -fx-font-size: 13px;
+    -fx-font-weight: 400;
+    -fx-text-fill: #c8d9e1;
+}
+
+/* ----- Sección del formulario ----- */
+.form-section {
+    -fx-padding: 0 36 0 36;
+    -fx-spacing: 16;
+}
+
+/* ----- Etiquetas de campo ----- */
+.field-label {
+    -fx-font-family: 'Nunito';
+    -fx-font-size: 13px;
+    -fx-font-weight: 700;
+    -fx-text-fill: #ddeaf0;
+}
+
+/* ----- Inputs ----- */
+.input-field {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 10;
+    -fx-border-color:      transparent;
+    -fx-border-radius:     10;
+    -fx-padding:           14 18 14 18;
+    -fx-font-family:       'Nunito';
+    -fx-font-size:         14px;
+    -fx-text-fill:         #3a3a3a;
+    -fx-prompt-text-fill:  #aab8bf;
+    -fx-pref-height: 50;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 6, 0.2, 0, 2);
+}
+
+.input-field:focused {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #5a9a7a;
+    -fx-border-width: 2;
+    -fx-border-radius: 10;
+    -fx-effect: dropshadow(gaussian, rgba(90,154,122,0.30), 10, 0.3, 0, 0);
+}
+
+/* Dots de la contraseña — verde */
+.password-field {
+    -fx-text-fill: #5a9a7a;
+}
+
+/* ----- Fila opciones ----- */
+.options-row {
+    -fx-alignment: CENTER_LEFT;
+    -fx-padding: 2 0 2 0;
+}
+
+/* ----- Checkbox ----- */
+.remember-check {
+    -fx-font-family: 'Nunito';
+    -fx-font-size:   13px;
+    -fx-text-fill:   #ddeaf0;
+}
+
+.remember-check .box {
+    -fx-background-color: transparent;
+    -fx-border-color: #ddeaf0;
+    -fx-border-width: 2;
+    -fx-border-radius: 3;
+    -fx-background-radius: 3;
+}
+
+.remember-check:selected .box {
+    -fx-background-color: #5a9a7a;
+    -fx-border-color: #5a9a7a;
+}
+
+.remember-check .mark {
+    -fx-background-color: #ffffff;
+}
+
+/* ----- Enlace ¿Olvidaste? ----- */
+.forgot-link {
+    -fx-font-family: 'Nunito';
+    -fx-font-size:   12.5px;
+    -fx-text-fill:   #c8d9e1;
+    -fx-border-color: transparent;
+    -fx-underline: false;
+}
+
+.forgot-link:hover {
+    -fx-text-fill: #ffffff;
+}
+
+/* ----- Botón Iniciar sesión ----- */
+.login-btn {
+    -fx-background-color: #4d6b7a;
+    -fx-background-radius: 10;
+    -fx-text-fill:  #ffffff;
+    -fx-font-family: 'Nunito';
+    -fx-font-size:   15px;
+    -fx-font-weight: 700;
+    -fx-pref-height: 52;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 8, 0.3, 0, 3);
+}
+
+.login-btn:hover {
+    -fx-background-color: #3d5a68;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.35), 12, 0.4, 0, 4);
+}
+
+.login-btn:pressed {
+    -fx-background-color: #2e4a57;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 4, 0.2, 0, 1);
+}
+
+/* ----- Pie — ¿No tienes cuenta? ----- */
+.no-account-label {
+    -fx-font-family: 'Nunito';
+    -fx-font-size:   13px;
+    -fx-text-fill:   #ddeaf0;
+}
+
+.register-link {
+    -fx-font-family: 'Nunito';
+    -fx-font-size:   13px;
+    -fx-font-weight: 700;
+    -fx-text-fill:   #c0917a;
+    -fx-border-color: transparent;
+    -fx-underline: false;
+}
+
+.register-link:hover {
+    -fx-text-fill: #d4a48f;
+}
