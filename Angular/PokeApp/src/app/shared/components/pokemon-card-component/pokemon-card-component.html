@@ -1,0 +1,16 @@
+<div class="card" (click)="alert()">
+  <div class="card__header">
+    <div class="card__header--text">
+      <h2>{{getId() | idPipe}}</h2>
+      <h2>{{getName() | firstCapital}}</h2>
+    </div>
+    <img [src]="getImg()" alt="Pokemon image" appImageError>
+  </div>
+</div>
+
+<app-pokemon-alert-component
+  [poke]="poke()"
+  [isAlertVisible] = isAlertVisible
+  (ocultarAlert)="ocultarAlert()"
+>
+</app-pokemon-alert-component>

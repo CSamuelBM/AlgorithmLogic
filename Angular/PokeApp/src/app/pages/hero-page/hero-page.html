@@ -1,0 +1,11 @@
+<main class="main">
+  <h3>{{title}}</h3>
+  <app-hero-component
+    [name]="name()"
+    [age]="age()"
+    (heroDescription)="getHeroDescription()"
+    (heroChange)="getHeroChange()"
+    (heroReset)="getHeroReset()"
+  >
+  </app-hero-component>
+</main>

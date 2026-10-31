@@ -1,0 +1,7 @@
+<div class="main__content__row">
+  <input #num1 placeholder="Numero 1" (input)="number1.emit(num1.value)">
+  <p> + </p>
+  <input #num2 placeholder="Numero 2" (input)="number2.emit(num2.value)">
+  <p> = </p>
+  <p>{{sum()}}</p>
+</div>

@@ -1,0 +1,9 @@
+<div class="main">
+  <app-temperature-component
+    [valueC]="celsius()"
+    [valueF]="fahrenheit()"
+    (celsius)="degreeCelsius($event)"
+    (fahrenheit)="degreeFahrenheit($event)"
+  >
+  </app-temperature-component>
+</div>

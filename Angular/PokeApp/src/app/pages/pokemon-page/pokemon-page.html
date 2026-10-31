@@ -1,0 +1,16 @@
+<main class="main">
+  <div class="main__content__row">
+    <button class="btn btn-primary" (click)="isLogged ? logout() : login()">{{isLogged ? 'Desloguearme' : 'Loguearme'}}</button>
+    <h3>{{title}}</h3>
+  </div>
+  <div class="row">
+    @for (poke of pokeList(); track $index) {
+      <div class="col-md-6 col-lg-4 col-xl-3">
+       <app-pokemon-card-component
+         [poke]="poke"
+       >
+       </app-pokemon-card-component>
+      </div>
+    }
+  </div>
+</main>
