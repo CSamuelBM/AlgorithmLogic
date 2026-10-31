@@ -1,0 +1,54 @@
+@use '../../../styles' as *;
+
+.header{
+  margin: 1rem;
+  padding: 1%;
+  background: $color-blue;
+  border-radius: 10px;
+}
+
+.header__nav {
+  display: flex;
+  padding: 1rem;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__title {
+  margin-left: 1rem;
+}
+
+.nav__title a {
+  font-size: 1.8rem;
+  color: $color-red;
+  text-decoration: none;
+}
+
+.nav__title a:hover {
+  cursor: pointer;
+}
+
+.nav__title a:active {
+  font-size: 2rem;
+}
+
+.nav__ul {
+  display: flex;
+  list-style: none;
+}
+
+.nav__ul li {
+  margin-left: 12px;
+}
+
+.nav__ul a {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: $color-white;
+  text-decoration: none;
+}
+
+.nav__ul a:hover {
+  cursor: pointer;
+}

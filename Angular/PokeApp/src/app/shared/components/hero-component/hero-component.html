@@ -1,0 +1,12 @@
+<main class="main">
+  <div class="main__content__row">
+    <p>{{name()}}</p>
+    <p>{{age()}} Años</p>
+  </div>
+  <div class="main__content__row">
+    <button (click)="heroDescription.emit()"> Descripción Héroe </button>
+    <button (click)="heroChange.emit()"> Cambiar Héroe </button>
+    <button (click)="heroReset.emit()"> Restablecer Héroe </button>
+  </div>
+  <p>{{name() | uppercase}}</p>
+</main>

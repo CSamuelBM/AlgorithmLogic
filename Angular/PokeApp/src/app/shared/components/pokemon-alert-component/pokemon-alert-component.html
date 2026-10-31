@@ -1,0 +1,11 @@
+<div id="alert" class="alert" [style.display]="isAlertVisible() ? 'flex' : 'none'">
+  <div class="alert__info">
+    <p><span>Experience:</span> {{this.getExperience()}} <span>Ex</span></p>
+    <p><span>Height:</span> {{this.getHeight()}} <span>m</span></p>
+    @for (nameType of nameList; track $index){
+      <p><span>Type:</span> {{nameType | firstCapital}}</p>
+    }
+    <p><span>Weight:</span> {{this.getWeight()}} <span>kg</span></p>
+    <button (click)="ocultarAlert.emit()">Salir</button>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+<main class="main">
+  @for (streaming of listStreaming(); track $index){
+    <app-streaming-component
+      [streaming]="streaming"
+    >
+    </app-streaming-component>
+  }
+
+  <button (click)="nextPage()">Siguiente</button>
+  <button (click)="prevPage()">Anterior</button>
+</main>

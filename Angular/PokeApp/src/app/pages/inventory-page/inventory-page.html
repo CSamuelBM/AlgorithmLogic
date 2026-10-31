@@ -1,0 +1,11 @@
+<main class="main">
+  <h3>{{title}}</h3>
+  <app-inventory-component
+    [num] = "num()"
+    (incrementNum)="incrementNum()"
+    (previousNum)="previousNum()"
+    (decrementNum)="decrementNum()"
+    (cleareNum)="cleareNum()"
+  >
+  </app-inventory-component>
+</main>

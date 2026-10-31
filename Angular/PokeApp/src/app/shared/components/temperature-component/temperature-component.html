@@ -1,0 +1,6 @@
+<div class="main__content__column">
+  <p>Celsius(∘C)</p>
+  <input #value1 placeholder="Celsius" [value]="valueC() | number:'1.2-2'" (input)="celsius.emit(value1.value)">
+  <p>Fahrenheit(∘F)</p>
+  <input #value2 placeholder="Fahrenheit" [value]="valueF() | number: '1.2-2'" (input)="fahrenheit.emit(value2.value)">
+</div>

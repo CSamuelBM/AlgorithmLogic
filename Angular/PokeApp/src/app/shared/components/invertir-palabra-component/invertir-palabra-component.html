@@ -1,0 +1,5 @@
+<div class="main">
+  <input #text placeholder="Palabra" (input)="textOriginal.emit(text.value)">
+  <p>Texto invertido: </p>
+  <p>{{textReverse()}}</p>
+</div>

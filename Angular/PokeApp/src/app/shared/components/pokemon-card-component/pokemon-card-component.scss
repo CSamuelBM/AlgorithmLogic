@@ -1,0 +1,27 @@
+@use "../../../../styles" as *;
+
+.card {
+  display: grid;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  grid-auto-rows: 20rem;
+  background-color: $color-alice-blue;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 25rem), 1fr));
+}
+
+.card:hover {
+  cursor: pointer;
+  box-shadow: 0 10px 20px $color-blue, 0 6px 6px $color-alice-blue;
+}
+
+.card__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card__header--text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
